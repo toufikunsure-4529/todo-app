@@ -38,7 +38,7 @@ function Navbar() {
                     }`
                   }
                 >
-                  Complete Todo
+                  Completed Todo
                 </NavLink>
                 <NavLink
                   to="/remening"
@@ -48,7 +48,7 @@ function Navbar() {
                     }`
                   }
                 >
-                  Remening Todo
+                  Remaining Todo
                 </NavLink>
                 <NavLink
                   to="/trush"
@@ -99,7 +99,7 @@ function Navbar() {
               to="/remening"
               className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
             >
-              Remening Todo
+              Remaining Todo
             </NavLink>
             <NavLink
               to="/trush"

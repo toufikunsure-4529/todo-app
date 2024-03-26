@@ -42,6 +42,7 @@ function App() {
     );
   };
 
+
   useEffect(() => {
     const localStorageTodos = JSON.parse(localStorage.getItem("todos"));
     if (localStorageTodos && localStorageTodos.length > 0) {
@@ -55,7 +56,13 @@ function App() {
 
   return (
     <TodoContextProvider
-      value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}
+      value={{
+        todos,
+        addTodo,
+        updateTodo,
+        deleteTodo,
+        toggleComplete,
+      }}
     >
       <div className="bg-[#172842] min-h-screen py-8">
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
@@ -78,8 +85,10 @@ function App() {
               </div>
             ))}
           </div>
+     
         </div>
         <ToastContainer />
+        
       </div>
     </TodoContextProvider>
   );

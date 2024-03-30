@@ -24,7 +24,7 @@ function Navbar() {
                   to="/"
                   className={({ isActive }) =>
                     `text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${
-                      isActive ? "text-orange-300" : "text-gray-700"
+                      isActive ? "text-orange-300" : "text-gray-200"
                     }`
                   }
                 >
@@ -34,7 +34,7 @@ function Navbar() {
                   to="/complete"
                   className={({ isActive }) =>
                     `text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${
-                      isActive ? "text-orange-300" : "text-gray-700"
+                      isActive ? "text-orange-300" : "text-gray-200"
                     }`
                   }
                 >
@@ -44,7 +44,7 @@ function Navbar() {
                   to="/remening"
                   className={({ isActive }) =>
                     `text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${
-                      isActive ? "text-orange-300" : "text-gray-700"
+                      isActive ? "text-orange-300" : "text-gray-200"
                     }`
                   }
                 >
@@ -54,7 +54,7 @@ function Navbar() {
                   to="/trush"
                   className={({ isActive }) =>
                     `text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${
-                      isActive ? "text-orange-300" : "text-gray-700"
+                      isActive ? "text-orange-300" : "text-gray-200"
                     }`
                   }
                 >

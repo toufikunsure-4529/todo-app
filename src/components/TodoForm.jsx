@@ -11,10 +11,18 @@ function TodoForm() {
     if (!todo) {
       toast.warn("Please Write Todo...");
     } else {
-      addTodo({ id: Date.now(), todo: todo, completed: false });
+      addTodo({
+        id: Date.now(),
+        todo: todo,
+        completed: false,
+        createdAt: Date.now(),
+      });
       setTodo("");
     }
   };
+
+
+
 
   return (
     <div>
@@ -30,7 +38,7 @@ function TodoForm() {
         />
         <button
           type="submit"
-          className="rounded-r-lg px-3 py-1 bg-orange-400 text-black shrink-0"
+          className="rounded-r-lg px-3 py-1 shrink-0 bg-green-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
         >
           Add Todo
         </button>
